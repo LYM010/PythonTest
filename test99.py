@@ -6,7 +6,7 @@
 '''
 import string
 if __name__ == '__main__':
-
+# 运行以上程序前，你需要在脚本执行的目录下创建 test1.txt、test2.txt 文件。
 
 	fp = open('test1.txt')
 	a = fp.read()

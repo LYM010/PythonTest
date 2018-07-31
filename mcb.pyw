@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
 
 # mcb.pyw - Saves and loads pieces of text to the clipboard.

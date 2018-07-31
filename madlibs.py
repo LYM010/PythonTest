@@ -30,3 +30,4 @@ if __name__ == '__main__':
 	# 输出至新文件
 	new_txtFile = open('test2','w')
 	new_txtFile.write(s1)
+	new_txtFile.close()

@@ -4,8 +4,8 @@
 # 不论这些文件的位置在哪里， 将它们拷贝到一个新的文件夹中。
 
 import os,shutil,re
-path =os.path.abspath( '..\\tmp')
-folder = os.path.abspath('..\\test')
+path =os.path.abspath( os.path.join('..','tmp'))
+folder = os.path.abspath(os.path.join('..','test'))
 
 if os.path.exists(folder):
     print('Folder exists.')

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# -*-UTF8-*-
+# -*-UTF-8-*-
 
 import os
 for root,dirs,files in os.walk('..'):

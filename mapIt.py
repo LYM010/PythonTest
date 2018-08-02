@@ -4,7 +4,7 @@
 import webbrowser,sys,logging,pyperclip
 logging.basicConfig(level = logging.DEBUG,
 	format='%(asctime)s - %(levelname)s - %(message)s')
-logging.disable(logging.CRITICAL)
+# logging.disable(logging.CRITICAL)
 
 if len(sys.argv) > 1:
 	address = ''.join(sys.argv[1:])

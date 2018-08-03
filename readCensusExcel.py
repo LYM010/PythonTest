@@ -3,7 +3,7 @@
 
 import openpyxl,pprint,os,logging
 logging.basicConfig(level=logging.DEBUG,format='%(asctime)s - %(levelname)s -%(message)s')
-# logging.disable(logging.CRITICAL)
+logging.disable(logging.CRITICAL)
 
 os.chdir(os.path.join('..','tmp'))
 

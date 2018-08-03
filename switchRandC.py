@@ -29,4 +29,5 @@ for i in range(len(dataList)):
 		sheetNew.cell(row=j,coloumnNum=i).value=dataList[i][j]
 
 # 保存数据至新表
+logging.debug('Saving data...')
 wbNew.save('test_copy.xlsx')

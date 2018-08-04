@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # coding:UTF-8
 import requests,os,bs4,logging
-logging.basicConfig(level=logging.DEBUG,format='%(asctime)s - %(levelname)s -%(message)s')
+logging.basicConfig(level=logging.DEBUG,format='%(asctime)s - %(levelname)s - %(message)s')
 
 # logging.disable(logging.CRICAL)
 
@@ -14,7 +14,7 @@ while not url.endswith('#'):
     res = requests.get(url)
     assert res.status_code == requests.codes.ok
 
-    soup = bs4.BeautifulSoup(res.text)
+    soup = bs4.BeautifulSoup(res.text,features='html.parser')
     comicElem = soup.select('#comic img')
     if comicElem == []:
         print('Could not find comic image.')
